@@ -20,7 +20,15 @@ public class Ejercicio16 {
 		System.out.println("A veces tiene llamadas que dice no querer contestar cuando estÃ¡s tÃº\n" + 
 				"delante");
 		String res6 = s.next();
-		System.out.println("");
+		System.out.println("Últimamente se preocupa más en cuidar la línea y/o estar bronceado/a");
+		String res7 = s.next();
+		System.out.println("Muchos días viene tarde después de trabajar porque dice tener mucho\r\n" + 
+				"más trabajo");
+		String res8 = s.next();
+		System.out.println("Has notado que últimamente se perfuma más");
+		String res9 = s.next();
+		System.out.println("Se confunde y te dice que ha estado en sitios donde no ha ido contigo");
+		String res10 = s.next();
 		
 
 	}
