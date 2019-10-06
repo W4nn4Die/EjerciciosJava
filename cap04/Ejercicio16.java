@@ -5,32 +5,69 @@ public class Ejercicio16 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		System.out.println("Responde las preguntas con V para Verdadero o F para Falso");
+		System.out.println("Responde las preguntas con 0 para Verdadero o 1 para Falso");
 		System.out.println("Tu pareja parece estar mÃ¡s inquieta de lo normal sin ningun motivo aparente: ");
-		String res1 = s.next();
+		int res1 = s.nextInt();
 		System.out.println("Ha aumentado sus gastos de vestuario");
-		String res2 = s.next();
+		int res2 = s.nextInt();
 		System.out.println("Ha perdido el interÃ©s que mostraba anteriormente por ti");
-		String res3 = s.next();
+		int res3 = s.nextInt();
 		System.out.println("Ahora se afeita y se asea con mÃ¡s frecuencia (si es hombre) o ahora se\n" + 
 				"arregla el pelo y se asea con mÃ¡s frecuencia (si es mujer)");
-		String res4 = s.next();
+		int res4 = s.nextInt();
 		System.out.println("No te deja que mires la agenda de su telÃ©fono mÃ³vil");
-		String res5 = s.next();
+		int res5 = s.nextInt();
 		System.out.println("A veces tiene llamadas que dice no querer contestar cuando estÃ¡s tÃº\n" + 
 				"delante");
-		String res6 = s.next();
-		System.out.println("Últimamente se preocupa más en cuidar la línea y/o estar bronceado/a");
-		String res7 = s.next();
-		System.out.println("Muchos días viene tarde después de trabajar porque dice tener mucho\r\n" + 
-				"más trabajo");
-		String res8 = s.next();
-		System.out.println("Has notado que últimamente se perfuma más");
-		String res9 = s.next();
+		int res6 = s.nextInt();
+		System.out.println("ï¿½ltimamente se preocupa mï¿½s en cuidar la lï¿½nea y/o estar bronceado/a");
+		int res7 = s.nextInt();
+		System.out.println("Muchos dï¿½as viene tarde despuï¿½s de trabajar porque dice tener mucho\n" + 
+				"mï¿½s trabajo");
+		int res8 = s.nextInt();
+		System.out.println("Has notado que ï¿½ltimamente se perfuma mï¿½s");
+		int res9 = s.nextInt();
 		System.out.println("Se confunde y te dice que ha estado en sitios donde no ha ido contigo");
-		String res10 = s.next();
-		
-
+		int res10 = s.nextInt();
+		int contador = 0;
+		if (res1 == 0) {
+			contador += 3;
+		}
+		else if (res2 == 0) {
+			contador +=  3;
+		}
+		else if (res3 == 0) {
+			contador +=  3;
+		}
+		else if (res4 == 0) {
+			contador += 3;
+		}
+		else if (res5 == 0) {
+			contador += 3;
+		}
+		else if (res6 == 0) {
+			contador += 3;
+		}
+		else if (res7 == 0) {
+			contador += 3;
+		}
+		else if (res8 == 0) {
+			contador += 3;
+		}
+		else if (res9 == 0) {
+			contador += 3;
+		}
+		else if (res10 == 0) {
+			contador += 3;
+		}
+		if (contador >= 0 || contador <= 10) {
+			System.out.println("Â¡Enhorabuena! tu pareja parece ser totalmente fiel.");
+		} else if (contador >= 11 || contador <= 22) {
+			System.out.println("QuizÃ¡s exista el peligro de otra persona en su vida o en su mente, aunque seguramente serÃ¡ algo sin importancia. No bajes la guardia.");
+		} else {
+			System.out.println("Tu pareja tiene todos los ingredientes para estar viviendo un romance con otra persona. Te aconsejamos que indagues un poco mÃ¡s y averigÃ¼es que es lo que estÃ¡ pasando por su cabeza.");
+		}
+		s.close();
 	}
 
 }
