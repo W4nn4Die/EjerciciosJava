@@ -20,7 +20,7 @@ public class Ejercicio16 {
 		System.out.println("A veces tiene llamadas que dice no querer contestar cuando estás tú\n" + 
 				"delante");
 		String res6 = s.next();
-		System.out.println();
+		System.out.println("");
 		
 
 	}
