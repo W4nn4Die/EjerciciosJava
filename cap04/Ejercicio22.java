@@ -7,7 +7,7 @@ public class Ejercicio22 {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Introduce el dia de la semana: ");
 		String dia = s.next();
-		dia.toLowerCase();
+		dia = dia.toLowerCase();
 		int diasAConvertir = 0;
 		switch (dia) {
 		case "lunes":
