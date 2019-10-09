@@ -1,10 +1,9 @@
 package com.iescampanillas.ejercicios;
 import java.util.Scanner;
-import javax.naming.SizeLimitExceededException;
 
 public class Ejercicio07 {
 
-	public static void main(String[] args) throws SizeLimitExceededException {
+	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int i = 4;
 		while (i>=1) {
@@ -14,8 +13,8 @@ public class Ejercicio07 {
 			int goodCode = 3423;
 			int longitud = String.valueOf(code).length();
 			if (longitud > 4) {
-				s.close();
-				throw new SizeLimitExceededException("\nEl codigo no puede tener mas de 4 digitos");
+				System.out.println("\nNo puede ser un numero con más de 4 digitos");
+				i -= 1;
 			}
 			if (code != goodCode) {
 				System.out.println("Lo siento, esa no es la combinación");
@@ -25,8 +24,8 @@ public class Ejercicio07 {
 				System.out.println("La caja fuerte se ha abierto satisfactoriamente");
 				i = 0;
 			}
-		} 
 		s.close();
 	}
 
+}
 }
