@@ -9,13 +9,16 @@ public class Ejercicio10 {
 		int num = 0;
 		int suma = 0;
 		int num1 = 0;
+		int total = 0;
 		for (i = 0;num>=0;i+=num) {
 			num1 = suma;
+			total++;
 			System.out.print("Introduce un numero para sumar\npara terminar introduce un numero negativo: ");
 			num = s.nextInt();
 			suma += num;
 		}
-		System.out.printf("La suma de todos los numeros es: %d", num1);
+		total = total -1;
+		System.out.printf("La media de todos los numeros es: %d", num1 / total);
 		s.close();
 	}
 
