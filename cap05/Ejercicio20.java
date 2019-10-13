@@ -30,6 +30,10 @@ public class Ejercicio20 {
 			espacios--;
 			vacio += 2;
 		}
+		int dobleBase = base * 2;
+		for (int i = 2; i<dobleBase; i++) {
+			System.out.print(relleno);
+		}
 		s.close();
 	}
 
