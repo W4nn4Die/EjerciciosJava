@@ -9,8 +9,9 @@ public class Ejercicio21 {
 		int totalImpar = 1;
 		int sumaImpar = 0;
 		int mayorPar = 0;
-		int save = sumaImpar;
+		int save = 0;
 		while (num >= 0) {
+			save = sumaImpar;
 			System.out.print("Introduce un numero: ");
 			num = s.nextInt();
 			int par = num % 2;
@@ -21,14 +22,18 @@ public class Ejercicio21 {
 			} else {
 				totalImpar++;
 				sumaImpar = sumaImpar + num;
-				save = sumaImpar;
 			}
 			if (num < 0) {
 				sumaImpar = save;
-				totalImpar--;
+				if (par == 0) {
+					totalImpar -= 1;
+				} else {
+					totalImpar -= 2;
+				}
+				
 			}
 		}
-		int mediaImpar = sumaImpar / (totalImpar);
+		int mediaImpar = sumaImpar / totalImpar;
 		System.out.printf("Mayor de los pares: %d\nMedia de los impares: %d", mayorPar, mediaImpar);
 		s.close();
 	}
