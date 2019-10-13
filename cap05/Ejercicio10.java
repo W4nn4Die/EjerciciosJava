@@ -5,12 +5,11 @@ public class Ejercicio10 {
 
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		int i = 0;
 		int num = 0;
 		int suma = 0;
 		int num1 = 0;
 		int total = 0;
-		for (i = 0;num>=0;i+=num) {
+		for (int i = 0;num>=0;i+=num) {
 			num1 = suma;
 			total++;
 			System.out.print("Introduce un numero para sumar\npara terminar introduce un numero negativo: ");
