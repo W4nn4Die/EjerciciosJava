@@ -11,7 +11,13 @@ public class Ejercicio26 {
 		int dig = s.nextInt();
 		System.out.printf("El digito %d aparece dentro del numero %d, en las posiciones: ", dig, num1);
 		int pos = 1;
-		int save = num1;
+		int reverse = 0;
+		while (num1 != 0) {
+      reverse = reverse * 10;
+      reverse = reverse + (num1%10);
+      num1 = num1/10;
+    }
+		int save = reverse;
 		while (save > 0) {
 			if ((save % 10) == dig) {
 				System.out.print(pos + " ");
