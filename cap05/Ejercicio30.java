@@ -67,7 +67,7 @@ public class Ejercicio30 {
 			diaNum2 = 7;
 			break;
 		}
-		int horasTotales = ((diaNum * 24) + hora) - ((diaNum2 * 24) + hora2);
+		int horasTotales = ((diaNum2 * 24) + hora2) - ((diaNum * 24) + hora);
 		System.out.printf("Entre las %d:00H del %s y las %d:00H del %s hay %d hora/s", hora, dia, hora2, dia2, horasTotales);
 		
 		s.close();
