@@ -8,14 +8,27 @@ public class Ejercicio32 {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Introduce un numero: ");
 		int num = s.nextInt();
-		int save = num;
 		System.out.print("Digitos pares: ");
-		while (save > 0) {
-			if (((save % 10) % 2) == 0) {
-				System.out.print(save);
-			}
-			save = save / 10;
+		int pos = 0;
+		int reverse = 0;
+		while (num != 0) {
+		  reverse = reverse * 10;
+		  reverse = reverse + (num%10);
+		  num = num/10;
+		  pos++;
 		}
+		int total = 0;
+		int dig = 0;
+		for (int i = 0; i < pos; i++) {
+		  dig = reverse % 10;
+		  if ((dig % 2) == 0) {
+			System.out.print(dig + " ");
+			total += dig;
+		  }
+		  reverse = reverse / 10;
+		}
+		System.out.println("Suma de los digitos pares: " + total);
+		//
 		s.close();
 	}
 
