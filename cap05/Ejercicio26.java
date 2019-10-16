@@ -13,10 +13,10 @@ public class Ejercicio26 {
 		int pos = 1;
 		int reverse = 0;
 		while (num1 != 0) {
-      reverse = reverse * 10;
-      reverse = reverse + (num1%10);
-      num1 = num1/10;
-    }
+		  reverse = reverse * 10;
+		  reverse = reverse + (num1%10);
+		  num1 = num1/10;
+		}
 		int save = reverse;
 		while (save > 0) {
 			if ((save % 10) == dig) {
