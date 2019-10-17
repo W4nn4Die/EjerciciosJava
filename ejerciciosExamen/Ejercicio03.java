@@ -33,22 +33,27 @@ public class Ejercicio03 {
   public static void abajo(int altInicial, int numPiramide, String relleno, int incremento) {
 	int cont = 0;
 	int base = 1;
-	int espacio = altInicial - 1;
-	int longi = 1;
+	int espacio = 0;
+	int longi = (altInicial*2) -1;
 	while (cont < numPiramide) {
 	  while (base <= altInicial) {
-		for (int i = 1; i <= espacio; i++) {
+		for (int i = 0; i < espacio; i++) {
 		  System.out.print(" ");
 		}
 		
-		for (int i = altInicial; i > 1; i--) {
+		for (int i = longi; i > 0; i--) {
 		  System.out.print(relleno);
 		}
 		System.out.println();
-		base++;
 		espacio++;
-		longi += 2;
+		longi -= 2;
+		base++;
 	  }
+	  System.out.println();
+	  altInicial += incremento;
+	  base = 1;
+	  espacio = 0;
+	  longi = (altInicial * 2) - 1;
 	  cont++;
 	}
   }
