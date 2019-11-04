@@ -2,6 +2,7 @@ package com.iescampanillas.ejercicios;
 
 public class Ejercicio11 {
 
+  public static void main(String[] args) {
 	int totalSuspenso = 0;
 	int totalSuficiente = 0;
 	int totalBien = 0;
