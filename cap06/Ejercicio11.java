@@ -1,17 +1,22 @@
+package com.iescampanillas.ejercicios;
 
 public class Ejercicio11 {
 
 	int totalSuspenso = 0;
+	int totalSuficiente = 0;
 	int totalBien = 0;
+	int totalNotable = 0;
 	int totalSobresaliente = 0;
 	int nota = 0;
 	String strNota = "";
 	for (int i = 1; i<=20; i++) {
 	  nota = (int) (Math.random() * 10);
 	  switch(nota) {
+	  case 0:
 	  case 1:
 	  case 2:
 	  case 3:
+	  case 4:
 		totalSuspenso++;
 		strNota = "Suspenso";
 		break;
