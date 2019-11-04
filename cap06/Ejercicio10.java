@@ -2,7 +2,6 @@ package com.iescampanillas.ejercicios;
 
 public class Ejercicio10 {
   
-  public static void getCar(String carac) {
 	int rand = (int) (Math.random()*40 + 1);
 	int randCar = (int) (Math.random()*6 + 1);
 	String tempCar = "";
@@ -29,20 +28,15 @@ public class Ejercicio10 {
 	  tempCar = "E";  
 	  break;
 	}
-	System.out.println(rand);
 	for (int i = 1; i <= rand; i++) {
-	  carac += tempCar + " ";
-	  System.out.print(carac);
+	  System.out.print(tempCar);
 	}
-	tempCar = "";
-	carac = "";
   }
 
   public static void main(String[] args) {
 	int cont = 0;
-	String carac = "";
 	while (cont < 10) {
-	  getCar(carac);
+	  getCar();
 	  System.out.println();
 	  cont++;
 	}
