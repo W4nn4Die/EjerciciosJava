@@ -42,7 +42,6 @@ public class Ejercicio11 {
 	  }
 	  System.out.printf("Nota %d: %s\n", i, strNota);
 	}
-	System.out.println("Total suspensos: " + totalSuspenso);
 	System.out.println("Total suficientes: " + totalSuficiente);
 	System.out.println("Total bien: " + totalBien);
 	System.out.println("Total notables: " + totalNotable);
