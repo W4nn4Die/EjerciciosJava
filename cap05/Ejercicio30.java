@@ -41,6 +41,9 @@ public class Ejercicio30 {
 		case "domingo":
 			diaNum = 7;
 			break;
+		default:
+		  	diaNum = 1;
+		  	break;
 		}
 		
 		int diaNum2 = 0;
@@ -66,6 +69,8 @@ public class Ejercicio30 {
 		case "domingo":
 			diaNum2 = 7;
 			break;
+		default:
+		  	diaNum2 = 1;
 		}
 		int horasTotales = ((diaNum2 * 24) + hora2) - ((diaNum * 24) + hora);
 		System.out.printf("Entre las %d:00H del %s y las %d:00H del %s hay %d hora/s", hora, dia, hora2, dia2, horasTotales);
