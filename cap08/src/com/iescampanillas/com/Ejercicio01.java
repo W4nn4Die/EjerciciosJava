@@ -78,6 +78,51 @@ public class Ejercicio01 {
 	  return result;
 	}
   }
+  
+  public static int posicionDeDigito(long num, int ocu) {
+	int i;
+
+    for (i = 0; (i < digitos(num)) && (digitoN(num, i) != ocu); i++) {};
+
+    if (i == digitos(num)) {
+      return -1;
+    } else {
+      return i;
+    }
+  }
+  
+  public static long quitaPorDetras(long num, long dig) {
+	return num / (long)potencia(10, (int) dig);
+  }
+  
+  public static long quitaPorDelante(long num, int dig) {
+	num = pegaPorDetras(num, 1);
+    num = voltea(quitaPorDetras(voltea(num), dig));
+    num = quitaPorDetras(num, 1);
+    return num;
+  }
+  
+  public static long pegaPorDetras(long num, int dig) {
+	return juntaNumeros(num, dig);
+  }
+  
+  public static long pegaPorDelante(long num, int dig) {
+	return juntaNumeros(dig, num);
+  }
+  
+  public static long trozoDeNumero(long num, int inicio, int fin) {
+	int longitud = digitos(num);
+    num = quitaPorDelante(num, inicio);
+    num = quitaPorDetras(num, longitud - fin - 1);
+    return num;
+  }
+  
+  public static long juntaNumeros(long num1, long num2) {
+	num1 = pegaPorDetras(num1, 1);
+    num1 = voltea(quitaPorDetras(voltea(num1), num2));
+    num1 = quitaPorDetras(num1, 1);
+    return num1;
+  }
 
   public static void main(String[] args) {
 
