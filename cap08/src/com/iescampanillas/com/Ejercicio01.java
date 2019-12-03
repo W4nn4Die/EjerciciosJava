@@ -2,13 +2,7 @@ package com.iescampanillas.com;
 
 public class Ejercicio01 {
   public static boolean esCapicua(long num) {
-	long numero = num;
-	long volt = 0;
-	while (numero > 0) {
-	  volt = (volt * 10) + (numero % 10);
-	  numero /= 10;
-	}
-	if (volt == num) {
+	if (voltea(num) == num) {
 	  return true;
 	} else {
 	  return false; 
@@ -62,6 +56,16 @@ public class Ejercicio01 {
 	  }
 	}
 	return dig;
+  }
+  
+  public static long voltea(long num) {
+	long numero = num;
+	long volt = 0;
+	while (numero > 0) {
+	  volt = (volt * 10) + (numero % 10);
+	  numero /= 10;
+	}
+	return volt;
   }
 
   public static void main(String[] args) {
