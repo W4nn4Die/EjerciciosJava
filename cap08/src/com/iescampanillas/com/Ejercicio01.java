@@ -67,6 +67,17 @@ public class Ejercicio01 {
 	}
 	return volt;
   }
+  
+  public static int digitoN(long num, int pos) {
+	String s = Long.toString(num);
+	if (pos == 0) {
+	  int result = Integer.parseInt(s.substring(0,0));
+	  return result;
+	} else {
+	  int result = Integer.parseInt(s.substring(pos--,pos));
+	  return result;
+	}
+  }
 
   public static void main(String[] args) {
 
